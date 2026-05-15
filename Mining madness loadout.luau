@@ -108,7 +108,7 @@ while wait(10) do
 	wait(10)
 	local args = {
 		"Quantum Shine",
-		10
+		25
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("buy"):InvokeServer(unpack(args))
 	local args = {
