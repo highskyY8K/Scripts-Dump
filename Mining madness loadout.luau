@@ -5,7 +5,7 @@ local loop = function(Times: IntValue, Function)
 end
 
 --
-while wait(10) do
+while wait(1) do
 	loop(10, function()
 		local args = {
 			"Electric Storm",
@@ -16,7 +16,7 @@ while wait(10) do
 	end)
 
 	loop(3, function()
-		wait(math.random(0, 3))
+		wait(math.random(0, 5))
 		local args = {
 			"Ore Flattener",
 			vector.create(6, 0, -58.5),
@@ -25,7 +25,7 @@ while wait(10) do
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	end)
 
-	loop(5, function()
+	loop(25, function()
 		local args = {
 			"Synotic Fuser",
 			vector.create(49.5, 0, -58.5),
@@ -34,7 +34,7 @@ while wait(10) do
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	end)
 
-	loop(5, function()
+	loop(25, function()
 		local args = {
 			"Quantum Shine",
 			vector.create(42, 0, -58.5),
