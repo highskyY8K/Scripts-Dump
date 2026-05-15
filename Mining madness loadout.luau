@@ -5,33 +5,15 @@ local loop = function(Times: IntValue, Function)
 end
 
 --
---while wait(1) do 
-	--[[loop(5, function()
-		local args = {
-			"Gyroscopic Scanner",
-			vector.create(36, 0, -58.5),
-			1
-		}
-		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
-	end)]]
-	
-	loop(5, function()
+while wait(1) do 
+	loop(2, function()
 		local args = {
 			"The Light",
-			vector.create(36, 0, -58.5),
-			3
+			vector.create(46.5, 0, -64.5),
+			2
 		}
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	end)
-	
-	--[[loop(5, function()
-		local args = {
-			"Blackhole Entrencher",
-			vector.create(36, 0, -58.5),
-			3
-		}
-		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
-	end)]]
 	
 	loop(5, function()
 		local args = {
@@ -121,8 +103,14 @@ end
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	local args = {
-		"VIP Furnace",
+		"Mechanical Marvel",
 		vector.create(-15, 0, -58.5),
+		0
+	}
+	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
+	local args = {
+		"Mechanical Marvel",
+		vector.create(-22.5, 0, -58.5),
 		0
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
@@ -139,4 +127,4 @@ end
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("buy"):InvokeServer(unpack(args))
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("prestige"):FireServer()
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("oreLimit"):FireServer()
---end
+end
