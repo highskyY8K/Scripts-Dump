@@ -5,15 +5,15 @@ local loop = function(Times: IntValue, Function)
 end
 
 --
-while wait(1) do
-	loop(5, function()
+--while wait(1) do 
+	--[[loop(5, function()
 		local args = {
 			"Gyroscopic Scanner",
 			vector.create(36, 0, -58.5),
-			3
+			1
 		}
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
-	end)
+	end)]]
 	
 	loop(5, function()
 		local args = {
@@ -24,14 +24,14 @@ while wait(1) do
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	end)
 	
-	loop(6, function()
+	--[[loop(5, function()
 		local args = {
 			"Blackhole Entrencher",
 			vector.create(36, 0, -58.5),
 			3
 		}
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
-	end)
+	end)]]
 	
 	loop(5, function()
 		local args = {
@@ -139,4 +139,4 @@ while wait(1) do
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("buy"):InvokeServer(unpack(args))
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("prestige"):FireServer()
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("oreLimit"):FireServer()
-end
+--end
