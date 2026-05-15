@@ -109,7 +109,7 @@ while wait(1) do
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	local args = {
-		"Mechanical Marvel",
+		"Wind Turbine Generator",
 		vector.create(-22.5, 0, -58.5),
 		0
 	}
