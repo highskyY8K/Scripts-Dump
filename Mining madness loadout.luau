@@ -15,6 +15,7 @@ loop(10, function()
 end)
 
 loop(3, function()
+	wait(math.random(0, 3))
 	local args = {
 		"Ore Flattener",
 		vector.create(6, 0, -58.5),
