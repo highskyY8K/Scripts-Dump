@@ -9,7 +9,7 @@ while wait(1) do
 	loop(2, function()
 		local args = {
 			"The Light",
-			vector.create(46.5, 0, -64.5),
+			vector.create(22.5, 0, -64.5),
 			2
 		}
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
