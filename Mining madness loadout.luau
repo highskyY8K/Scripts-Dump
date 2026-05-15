@@ -108,12 +108,12 @@ while wait(10) do
 	wait(10)
 	local args = {
 		"Quantum Shine",
-		25
+		math.random(1, 10)
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("buy"):InvokeServer(unpack(args))
 	local args = {
 		"Synotic Fuser",
-		5
+		math.random(1, 5)
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("buy"):InvokeServer(unpack(args))
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("prestige"):FireServer()
