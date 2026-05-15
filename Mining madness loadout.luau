@@ -6,7 +6,34 @@ end
 
 --
 while wait(1) do
-	loop(10, function()
+	loop(5, function()
+		local args = {
+			"Gyroscopic Scanner",
+			vector.create(36, 0, -58.5),
+			3
+		}
+		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
+	end)
+	
+	loop(5, function()
+		local args = {
+			"The Light",
+			vector.create(36, 0, -58.5),
+			3
+		}
+		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
+	end)
+	
+	loop(6, function()
+		local args = {
+			"Blackhole Entrencher",
+			vector.create(36, 0, -58.5),
+			3
+		}
+		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
+	end)
+	
+	loop(5, function()
 		local args = {
 			"Electric Storm",
 			vector.create(36, 0, -58.5),
@@ -91,12 +118,6 @@ while wait(1) do
 		"Shining Blight",
 		vector.create(-4.5, 0, -58.5),
 		1
-	}
-	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
-	local args = {
-		"Ore Compactor",
-		vector.create(-15, 0, -58.5),
-		3
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	local args = {
