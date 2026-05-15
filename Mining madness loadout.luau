@@ -25,7 +25,7 @@ while wait(10) do
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	end)
 
-	loop(25, function()
+	loop(5, function()
 		local args = {
 			"Synotic Fuser",
 			vector.create(49.5, 0, -58.5),
@@ -34,7 +34,7 @@ while wait(10) do
 		game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("place"):InvokeServer(unpack(args))
 	end)
 
-	loop(25, function()
+	loop(5, function()
 		local args = {
 			"Quantum Shine",
 			vector.create(42, 0, -58.5),
@@ -108,13 +108,14 @@ while wait(10) do
 	wait(10)
 	local args = {
 		"Quantum Shine",
-		math.random(1, 10)
+		10
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("buy"):InvokeServer(unpack(args))
 	local args = {
 		"Synotic Fuser",
-		math.random(1, 10)
+		5
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("buy"):InvokeServer(unpack(args))
-	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("prestige"):FireServer("")
+	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("prestige"):FireServer()
+	game:GetService("ReplicatedStorage"):WaitForChild("remotes"):WaitForChild("oreLimit"):FireServer()
 end
